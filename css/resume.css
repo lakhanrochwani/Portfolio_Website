@@ -190,3 +190,6 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+.border-prime{
+  border: 2px groove #BD5D38;
+}
