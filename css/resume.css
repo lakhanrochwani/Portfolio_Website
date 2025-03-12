@@ -212,35 +212,49 @@ a:hover, a:focus, a:active {
 
 
 
-body {
+ body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to right, #bd5d38, #824027);
       color: #fff;
     }
-.nav-link {
+    .nav-link {
       transition: transform 0.3s ease-in-out;
     }
-.nav-link:hover {
+    .nav-link:hover {
       transform: scale(1.1);
     }
-.img-profile {
+    .img-profile {
       transition: transform 1s ease-in-out;
     }
-.img-profile:hover {
+    .img-profile:hover {
       transform: rotate(360deg);
     }
-.social-icons a {
+    .social-icons a {
       transition: transform 0.3s ease-in-out;
     }
-.social-icons a:hover {
+    .social-icons a:hover {
       transform: scale(1.2);
     }
-.resume-section {
+    .resume-section {
       opacity: 0;
       transform: translateY(50px);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
-.resume-section.show {
+    .resume-section.show {
       opacity: 1;
       transform: translateY(0);
+    }
+    .btn {
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #ff7043;
+      transform: scale(1.05);
+    }
+    .card {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     }
