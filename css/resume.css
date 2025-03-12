@@ -73,7 +73,6 @@ p.lead {
 
 .social-icons a:hover {
   background-color: #BD5D38;
-  transform: scale(1.2);
 }
 
 .dev-icons {
@@ -207,5 +206,5 @@ a:hover, a:focus, a:active {
   background-color: #BD5D38;
 }
 .btn:hover{
-  background-color: #824027;
+    background-color: #824027;
 }
