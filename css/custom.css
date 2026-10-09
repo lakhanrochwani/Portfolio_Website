@@ -1320,3 +1320,243 @@ section.resume-section {
     will-change: auto !important;
   }
 }
+/* =========================================
+   Step 4 — Experience Timeline
+   ========================================= */
+
+#experience .my-auto {
+  position: relative;
+}
+
+#experience .my-auto::before {
+  content: "";
+  position: absolute;
+  top: 5.2rem;
+  bottom: 1.8rem;
+  left: 0.3rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(120, 228, 209, 0.45) 8%,
+    rgba(120, 228, 209, 0.16) 90%,
+    transparent
+  );
+  pointer-events: none;
+}
+
+#experience .resume-item {
+  position: relative;
+  margin-left: 1.55rem !important;
+  margin-bottom: 1.5rem !important;
+  padding: clamp(1.2rem, 2.5vw, 1.8rem);
+  border: 1px solid var(--border);
+  border-left: 1px solid rgba(120, 228, 209, 0.3);
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 28, 48, 0.96),
+    rgba(13, 22, 40, 0.82)
+  );
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+#experience .resume-item::before {
+  content: "";
+  position: absolute;
+  top: 1.65rem;
+  left: -1.6rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid var(--page-bg);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(120, 228, 209, 0.1);
+}
+
+#experience .resume-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.22);
+}
+
+#experience .resume-item h3 {
+  margin-bottom: 0.45rem;
+  line-height: 1.35;
+}
+
+#experience .resume-item .subheading {
+  margin-bottom: 0.85rem !important;
+  color: var(--accent);
+}
+
+#experience .resume-item ul {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+}
+
+#experience .resume-item li {
+  margin-bottom: 0.65rem;
+  padding-left: 0.15rem;
+  line-height: 1.75;
+}
+
+#experience .resume-date {
+  min-width: 0;
+  color: var(--accent) !important;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+#experience .resume-date span {
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(120, 228, 209, 0.06);
+  line-height: 1.5;
+}
+
+/* =========================================
+   Step 4 — Project Showcase
+   ========================================= */
+
+#interests .card-deck {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+#interests .card-deck + br {
+  display: none;
+}
+
+#interests .card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: auto;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+#interests .card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-strong);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.24);
+}
+
+#interests .card-img-top {
+  display: block;
+  width: 100%;
+  height: 195px;
+  object-fit: cover;
+  object-position: center;
+  background: var(--surface-raised);
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  transition: transform 350ms ease;
+}
+
+#interests .card:hover .card-img-top {
+  transform: scale(1.025);
+}
+
+#interests .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.3rem;
+}
+
+#interests .card-title {
+  min-height: 3rem;
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+#interests .project-link {
+  margin-top: auto;
+}
+
+/* Tablet */
+
+@media (max-width: 991.98px) {
+  #experience .resume-item {
+    gap: 1rem;
+  }
+
+  #interests .card-deck {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+  #experience .my-auto::before {
+    left: 0.25rem;
+  }
+
+  #experience .resume-item {
+    margin-left: 1.2rem !important;
+    padding: 1.1rem;
+  }
+
+  #experience .resume-item::before {
+    left: -1.3rem;
+  }
+
+  #experience .resume-date {
+    text-align: left;
+  }
+
+  #interests .card-deck {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  #interests .card-img-top {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  #interests .card-title {
+    min-height: 0;
+  }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  #experience .resume-item,
+  #interests .card,
+  #interests .card-img-top {
+    transition: none !important;
+  }
+
+  #experience .resume-item:hover,
+  #interests .card:hover,
+  #interests .card:hover .card-img-top {
+    transform: none !important;
+  }
+}
