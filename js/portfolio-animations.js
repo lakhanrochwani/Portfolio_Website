@@ -25,7 +25,9 @@
       "#skills .workflow-step",
       "#awards .certificate-card",
       "#contact .form-group",
-      "#contact button[type='submit']"
+      "#contact button[type='submit']",
+      "#contact .contact-link",
+      "#contact .contact-form-card",
     ];
 
     var revealElements = [];
