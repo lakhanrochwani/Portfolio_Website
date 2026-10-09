@@ -1560,3 +1560,15 @@ section.resume-section {
     transform: none !important;
   }
 }
+
+/* Keep experience dates on one line */
+@media (min-width: 768px) {
+  #experience .resume-date {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  #experience .resume-date span {
+    white-space: nowrap;
+  }
+}
