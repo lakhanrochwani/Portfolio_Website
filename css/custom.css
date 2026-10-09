@@ -1,0 +1,408 @@
+/* =========================================
+   Modern Portfolio — Custom Theme
+   Keep this separate from resume.css
+   ========================================= */
+
+:root {
+  --page-bg: #0b1120;
+  --nav-bg: #0a0f1c;
+  --card-bg: #111b2e;
+  --card-hover: #17243a;
+  --text-primary: #f1f5f9;
+  --text-secondary: #a4b2c7;
+  --accent: #78e4d1;
+  --accent-hover: #a4f5e8;
+  --border-color: rgba(164, 178, 199, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text-secondary);
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--page-bg);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  text-transform: none;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2.5rem !important;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p.lead {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  max-width: 850px;
+}
+
+.subheading {
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: none;
+}
+
+a {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+/* Navigation */
+
+#sideNav,
+#sideNav.bg-primary {
+  background: var(--nav-bg) !important;
+  border-right: 1px solid var(--border-color);
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+#sideNav .navbar-brand .img-profile {
+  border: 3px solid var(--border-color);
+  border-radius: 50%;
+  object-fit: cover;
+  transition: border-color 0.25s ease;
+}
+
+#sideNav .navbar-brand .img-profile:hover {
+  border-color: var(--accent);
+}
+
+#sideNav .navbar-toggler {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Main sections */
+
+section.resume-section {
+  max-width: 90rem;
+  padding: 5rem clamp(1.25rem, 4vw, 3.5rem) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#about {
+  background:
+    radial-gradient(
+      ellipse at 85% 20%,
+      rgba(120, 228, 209, 0.08),
+      transparent 42%
+    );
+}
+
+#about .lead {
+  margin-top: 1.5rem;
+}
+
+.text-primary {
+  color: var(--accent) !important;
+}
+
+.bg-primary {
+  background-color: var(--nav-bg) !important;
+}
+
+/* Social links */
+
+.social-icons a {
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-right: 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--card-bg);
+  color: var(--text-primary) !important;
+  font-size: 1.2rem;
+  line-height: 3.1rem;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.social-icons a:hover {
+  background: var(--card-hover);
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+/* Experience cards */
+
+#experience .resume-item {
+  gap: 1rem;
+  padding: 1.75rem;
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent);
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    var(--card-bg),
+    rgba(17, 27, 46, 0.6)
+  );
+  margin-bottom: 1.5rem !important;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+#experience .resume-item:hover {
+  background: var(--card-hover);
+  border-color: rgba(120, 228, 209, 0.45);
+  transform: translateY(-3px);
+}
+
+#experience .resume-item h3 {
+  margin-bottom: 0.4rem;
+}
+
+#experience .resume-item ul {
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+#experience .resume-item li {
+  margin-bottom: 0.65rem;
+}
+
+#experience .resume-date {
+  min-width: 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+/* Skills */
+
+.dev-icons {
+  color: var(--text-secondary);
+  font-size: 2.7rem;
+}
+
+.dev-icons .list-inline-item {
+  margin-right: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.dev-icons .list-inline-item i {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+#skills .fa-ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* Project cards */
+
+#interests .card-deck {
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#interests .card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+#interests .card:hover {
+  border-color: rgba(120, 228, 209, 0.5);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+#interests .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  background: var(--card-hover);
+}
+
+#interests .card-body {
+  padding: 1.25rem;
+}
+
+#interests .card-title {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+
+.project-link,
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: #0b1120;
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-link:hover,
+.btn:hover {
+  background: var(--accent-hover);
+  color: #0b1120;
+  box-shadow: 0 5px 20px rgba(120, 228, 209, 0.12);
+  transform: translateY(-2px);
+}
+
+.border-prime {
+  border: 1px solid var(--border-color);
+}
+
+/* Contact form */
+
+#contact label {
+  color: var(--text-primary);
+}
+
+#contact .form-control {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+#contact .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(120, 228, 209, 0.1);
+}
+
+#contact .form-control::placeholder {
+  color: #7f8ba1;
+}
+
+/* Responsive layout */
+
+@media (min-width: 768px) {
+  #experience .resume-item {
+    align-items: flex-start;
+  }
+
+  #experience .resume-date {
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  section.resume-section {
+    padding: 3.5rem 1.25rem !important;
+  }
+
+  #about {
+    padding-top: 3rem !important;
+  }
+
+  #experience .resume-item {
+    padding: 1.2rem;
+  }
+
+  #interests .card-deck {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #interests .card {
+    margin-bottom: 0.5rem;
+  }
+
+  #interests .card-img-top {
+    height: 200px;
+  }
+
+  .dev-icons {
+    font-size: 2.2rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
