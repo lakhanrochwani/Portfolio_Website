@@ -1642,3 +1642,319 @@ section.resume-section {
     text-align: left;
   }
 }
+
+/* =========================================
+   Skills & Toolkit — Senior Engineering
+   ========================================= */
+
+#skills .skills-container {
+  width: 100%;
+}
+
+#skills .skills-eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+}
+
+#skills h2 {
+  margin-bottom: 0.9rem !important;
+}
+
+#skills .skills-intro {
+  max-width: 670px;
+  margin-bottom: 2.25rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Capability cards */
+
+#skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.15rem;
+}
+
+#skills .skill-category {
+  min-width: 0;
+  padding: clamp(1.15rem, 2.5vw, 1.65rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: linear-gradient(
+    145deg,
+    rgba(17, 28, 48, 0.96),
+    rgba(13, 22, 40, 0.88)
+  );
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+#skills .skill-category:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  background-color: var(--surface-raised);
+  box-shadow: var(--shadow-hover);
+}
+
+#skills .skill-category-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+#skills .skill-category-number {
+  display: inline-flex;
+  flex: 0 0 2.35rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid rgba(120, 228, 209, 0.25);
+  border-radius: 10px;
+  background: rgba(120, 228, 209, 0.07);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+#skills .skill-category-heading h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.12rem;
+  letter-spacing: -0.025em;
+}
+
+#skills .skill-category-heading p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.83rem;
+  line-height: 1.6;
+}
+
+/* Technology tags */
+
+#skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#skills .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(6, 13, 25, 0.32);
+  color: var(--text-secondary);
+  font-size: 0.77rem;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+#skills .skill-tag:hover {
+  border-color: var(--border-strong);
+  background: rgba(120, 228, 209, 0.07);
+  color: var(--text-primary);
+}
+
+#skills .skill-secondary {
+  margin: 1rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.77rem;
+  line-height: 1.65;
+}
+
+/* Dedicated AI tools treatment */
+
+#skills .skill-category-ai {
+  border-color: rgba(120, 228, 209, 0.28);
+  background:
+    radial-gradient(
+      ellipse at 95% 5%,
+      rgba(120, 228, 209, 0.09),
+      transparent 55%
+    ),
+    var(--surface);
+}
+
+#skills .ai-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+#skills .ai-tool {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(6, 13, 25, 0.3);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+#skills .ai-tool:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  background: rgba(120, 228, 209, 0.06);
+}
+
+#skills .ai-tool-mark {
+  display: inline-flex;
+  flex: 0 0 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(120, 228, 209, 0.22);
+  border-radius: 8px;
+  background: rgba(120, 228, 209, 0.09);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* Engineering workflow */
+
+#skills .workflow-section {
+  margin-top: 3.25rem;
+  padding-top: 2.3rem;
+  border-top: 1px solid var(--border);
+}
+
+#skills .workflow-heading {
+  margin-bottom: 1.35rem;
+  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+}
+
+#skills .workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+#skills .workflow-step {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(17, 28, 48, 0.65);
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+#skills .workflow-step:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  background: var(--surface);
+}
+
+#skills .workflow-number {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+#skills .workflow-step h4 {
+  margin-bottom: 0.65rem;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+#skills .workflow-step p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+/* Tablet */
+
+@media (max-width: 991.98px) {
+  #skills .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #skills .workflow-step:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767.98px) {
+  #skills .skill-grid,
+  #skills .workflow-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #skills .workflow-step:last-child {
+    grid-column: auto;
+  }
+
+  #skills .workflow-section {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+  }
+
+  #skills .skills-intro {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #skills .ai-tool-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Reduced-motion support */
+
+@media (prefers-reduced-motion: reduce) {
+  #skills .skill-category,
+  #skills .skill-tag,
+  #skills .ai-tool,
+  #skills .workflow-step {
+    transition: none !important;
+  }
+
+  #skills .skill-category:hover,
+  #skills .ai-tool:hover,
+  #skills .workflow-step:hover {
+    transform: none !important;
+  }
+}
