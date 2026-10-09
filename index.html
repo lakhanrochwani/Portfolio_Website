@@ -874,27 +874,159 @@ Authored detailed technical documentation to facilitate knowledge sharing and on
 
       <hr class="m-0">
 
+      
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
-        <div class="my-auto">
-          <h2 class="mb-5">Contact Me!</h2>
-          <form action="https://getform.io/f/e67e3d59-04e3-457d-8a02-443c448578a7" method="POST">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name"  placeholder="Enter your name">
+        <div class="my-auto contact-container">
+      
+          <div class="contact-layout">
+      
+            <!-- Personal introduction -->
+            <div class="contact-copy">
+              <p class="contact-eyebrow">LET'S CONNECT</p>
+      
+              <h2>Have a good project in mind?</h2>
+      
+              <p class="contact-intro">
+                Whether you're hiring for a frontend role, building a product,
+                or interested in UI architecture and AI-assisted engineering,
+                I'd be glad to connect.
+              </p>
+      
+              <p class="contact-note">
+                Prefer a direct message? You can reach me through email or
+                connect with me on LinkedIn.
+              </p>
+      
+              <div class="contact-links">
+      
+                <a class="contact-link"
+                   href="mailto:rochwanilakhan@gmail.com">
+                  <span class="contact-link-icon" aria-hidden="true">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="contact-link-copy">
+                    <span class="contact-link-label">EMAIL</span>
+                    <span class="contact-link-value">
+                      rochwanilakhan@gmail.com
+                    </span>
+                  </span>
+                  <i class="fas fa-arrow-right contact-link-arrow"
+                     aria-hidden="true"></i>
+                </a>
+      
+                <a class="contact-link"
+                   href="https://www.linkedin.com/in/lakhan-rochwani/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <span class="contact-link-icon" aria-hidden="true">
+                    <i class="fab fa-linkedin-in"></i>
+                  </span>
+                  <span class="contact-link-copy">
+                    <span class="contact-link-label">LINKEDIN</span>
+                    <span class="contact-link-value">
+                      Connect professionally
+                    </span>
+                  </span>
+                  <i class="fas fa-external-link-alt contact-link-arrow"
+                     aria-hidden="true"></i>
+                </a>
+      
+                <a class="contact-link"
+                   href="https://github.com/lakhanrochwani?tab=repositories"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <span class="contact-link-icon" aria-hidden="true">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span class="contact-link-copy">
+                    <span class="contact-link-label">GITHUB</span>
+                    <span class="contact-link-value">
+                      Explore my repositories
+                    </span>
+                  </span>
+                  <i class="fas fa-external-link-alt contact-link-arrow"
+                     aria-hidden="true"></i>
+                </a>
+      
+              </div>
+      
+              <p class="contact-location">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                Based in San Diego, California
+              </p>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">Your email will be safe.</small>
+      
+            <!-- Contact form -->
+            <div class="contact-form-card">
+      
+              <div class="contact-form-heading">
+                <p class="contact-form-eyebrow">CONTACT FORM</p>
+                <h3>Send a message</h3>
+                <p>
+                  Share a little context about what you have in mind.
+                </p>
+              </div>
+      
+              <form class="contact-form"
+                    action="https://getform.io/f/e67e3d59-04e3-457d-8a02-443c448578a7"
+                    method="POST">
+      
+                <div class="contact-form-grid">
+      
+                  <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contact-name"
+                      name="name"
+                      placeholder="Your name"
+                      autocomplete="name"
+                      required>
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="contact-email">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contact-email"
+                      name="email"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                      required>
+                  </div>
+      
+                  <div class="form-group contact-message-group">
+                    <label for="contact-message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="contact-message"
+                      name="message"
+                      rows="5"
+                      placeholder="Tell me a little about your project or opportunity..."
+                      required></textarea>
+                  </div>
+      
+                </div>
+      
+                <button type="submit" class="btn contact-submit">
+                  Send message
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+      
+                <p class="contact-form-note">
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                  Your message will be submitted through the contact form service.
+                </p>
+      
+              </form>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Message</label>
-              <textarea name="name" class="form-control" rows="8" cols="80"></textarea>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-          </form>
+      
+          </div>
         </div>
       </section>
+
 
     </div>
 
