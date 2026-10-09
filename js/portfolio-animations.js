@@ -21,8 +21,8 @@
       "#experience .resume-item",
       "#education .resume-item",
       "#interests .card",
-      "#skills .subheading",
-      "#skills .fa-ul li",
+      "#skills .skill-category",
+      "#skills .workflow-step",
       "#awards .fa-ul li",
       "#contact .form-group",
       "#contact button[type='submit']"
