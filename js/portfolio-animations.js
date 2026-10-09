@@ -23,7 +23,7 @@
       "#interests .card",
       "#skills .skill-category",
       "#skills .workflow-step",
-      "#awards .fa-ul li",
+      "#awards .certificate-card",
       "#contact .form-group",
       "#contact button[type='submit']"
     ];
