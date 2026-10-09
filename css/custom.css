@@ -2764,3 +2764,100 @@ section.resume-section {
     transform: none !important;
   }
 }
+
+/* =========================================
+   Sidebar — Personal Brand & Active State
+   ========================================= */
+
+/* Identity beneath the portrait */
+@media (min-width: 992px) {
+  #sideNav .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  #sideNav .sidebar-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
+  }
+
+  #sideNav .sidebar-identity strong {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.4;
+  }
+
+  #sideNav .sidebar-identity small {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
+}
+
+/* Navigation labels */
+#sideNav .navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding: 0.72rem 1rem;
+  font-size: 0.8rem;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    font-size 180ms ease,
+    padding 180ms ease;
+}
+
+/* Active section: slightly larger and more prominent */
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  padding-left: 1.2rem;
+  background: rgba(120, 228, 209, 0.1);
+  color: var(--accent);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+/* Mint accent marker for the active section */
+#sideNav .navbar-nav .nav-item .nav-link.active::before {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 0.45rem;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--accent);
+  content: "";
+}
+
+/* Refined hover state without competing with the active state */
+#sideNav .navbar-nav .nav-item .nav-link:not(.active):hover {
+  padding-left: 1.15rem;
+  background: rgba(120, 228, 209, 0.045);
+  color: var(--text-primary);
+}
+
+/* Mobile navigation touch targets */
+@media (max-width: 991.98px) {
+  #sideNav .navbar-nav .nav-item .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  #sideNav .navbar-nav .nav-item .nav-link.active {
+    font-size: 0.9rem;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #sideNav .navbar-nav .nav-item .nav-link {
+    transition: none !important;
+  }
+}
